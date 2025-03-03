@@ -1,0 +1,211 @@
+*{
+  font-family: arial;
+  
+}
+
+body {
+  background-image: url('rat-spinning.gif');
+  background-size: cover; /* Ensure the image covers the entire screen */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Keeps the image fixed during scrolling */
+  color: white; /* Text color to stand out on the background */
+}
+
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(32, 2, 48);
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navigation Links */
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px; /* More space between buttons */
+  margin-right: auto; /* Moves the buttons closer to the center */
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: rgb(205, 236, 246);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: rgb(104, 10, 154);
+  border-radius: 5px;
+  color: rgb(255, 0, 136); 
+}
+
+/* Prevent content from being hidden behind navbar */
+body {
+  padding-top: 80px;
+}
+
+
+/* Welcome Section */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  width: 80vw;
+  margin: auto;
+  border: 15px solid rgb(56, 6, 83);
+  background: linear-gradient(135deg, #ffffff, #464646); /* Diagonal gradient */
+  color : white;
+  background-size : cover; 
+  background-position : center; 
+  background-attachment : fixed;
+  padding : 40px;
+  box-shadow : 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Welcome Section Text */
+#welcome-section h1 {
+  font-size: 80px;
+  margin-bottom: 10px;
+  /* background-image: linear-gradient(
+    to right,
+     red,
+     orange,
+      yellow,
+       green,
+       blue,
+       purple); */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: impact;
+  background-size: 200% 200%;
+  animation: light 5s ease-in-out infinite;
+}
+
+@keyframes light {
+  16.6666666667% {
+      background-color: red;
+  }
+  33.3333333333 {
+    background-color: orange;
+  }
+  50% {
+    background-color: yellow;
+}
+  66.6666666667% {
+    background-color: green;
+}
+83.3333333334% {
+  background-color: blue;
+}
+100% {
+  background-color: purple;
+}
+}
+
+#welcome-section h2 {
+  font-size: 19px;
+  font-style: oblique;
+  color: rgb(175, 243, 159);
+}
+
+/* textbox style */
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  width: auto;
+  margin: auto;
+  border: 15px solid rgb(56, 6, 83);
+  background: linear-gradient(135deg, #ffffff, #464646); /* Diagonal gradient */
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed;
+  color: white;
+  padding: 40px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 30px; 
+}
+
+/* textbox style */
+.projects h2 {
+  font-size: 40px;
+  margin-top: 20px;
+  font-family: impact;
+  color: black;
+}
+
+.project-description {
+  font-size: 18px;
+  margin-top: 20px;
+  color: rgb(175, 243, 159);
+}
+
+/* textbox style */
+
+
+
+footer {
+  background-color: rgb(32, 2, 48);
+  display: flex;
+  justify-content: center;
+}
+
+footer,
+footer a {
+  color: #dfdfe2;
+}
+
+address {
+  text-align: center;
+  padding: 0.3em;
+}
+
+.redacted {
+  background-color: black;
+  color: white;
+  padding: 2px 6px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 1px;
+  display: inline-block;
+
+  animation: vibrate 0.001s infinite;
+}
+
+@keyframes vibrate {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-1px, 1px); }
+  50% { transform: translate(1px, -1px); }
+  75% { transform: translate(-1px, -1px); }
+  100% { transform: translate(1px, 1px); }
+}

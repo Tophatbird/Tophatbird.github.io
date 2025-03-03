@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>???</title>
+    <link rel="stylesheet" href="nah.css">
+</head>
+<body>
+    <div class="content">
+        <h1>You should not be here</h1>
+    </div>
+
+    <div class="jumpscare" id="jumpscare">
+        <img src="RUNRUNRUNRUNRUN.png" >
+        <audio id="screamsound" src="scream.mp3"></audio>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById('jumpscare').classList.add('active');
+            // document.getElementById('screamsound').play();
+
+            setTimeout(() => {
+                window.location.href = 'web_copy.html';
+            }, 3000); 
+        }, 3000); 
+    </script>
+</body>
+</html>
